@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20/10 yêu thương gửi 11A5 🌷</title>
+  <style>
+    :root {
+      --pink: #ff6f9f;
+      --deep: #c43e72;
+      --cream: #fff8fb;
+      --lavender: #f4eaff;
+      --text: #66364b;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--text);
+      background: linear-gradient(135deg, #fff7fb 0%, #ffe7f0 48%, #f5eaff 100%);
+      overflow-x: hidden;
+    }
+    .sparkles { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+    .floaty {
+      position: absolute; bottom: -50px; opacity: .72;
+      animation: rise linear infinite;
+      font-size: clamp(18px, 3vw, 30px);
+    }
+    @keyframes rise {
+      from { transform: translateY(0) rotate(0deg); opacity: 0; }
+      12% { opacity: .72; }
+      to { transform: translateY(-115vh) rotate(35deg); opacity: 0; }
+    }
+    .wrap { position: relative; z-index: 1; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      max-width: 1100px; margin: auto; padding: 22px 24px;
+    }
+    .brand { font-weight: 800; color: var(--deep); letter-spacing: .3px; }
+    .nav-tag { border: 1px solid #ffc0d4; border-radius: 99px; padding: 8px 14px; background: #ffffffa8; font-size: .9rem; }
+    .hero {
+      max-width: 1000px; min-height: 76vh; margin: auto; padding: 48px 24px 70px;
+      display: grid; grid-template-columns: 1.15fr .85fr; gap: 34px; align-items: center;
+    }
+    .eyebrow {
+      display: inline-block; background: white; border: 1px solid #ffd0df;
+      padding: 9px 15px; border-radius: 99px; color: var(--deep); font-size: .9rem;
+      box-shadow: 0 8px 25px #d85d8512;
+    }
+    h1 { font-size: clamp(2.6rem, 6vw, 5.1rem); line-height: 1.05; margin: 20px 0; letter-spacing: -2px; }
+    h1 span { color: var(--pink); }
+    .intro { font-size: 1.1rem; line-height: 1.8; max-width: 560px; color: #805268; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 27px; }
+    button, .button-link {
+      border: 0; cursor: pointer; font: inherit; font-weight: 700; border-radius: 14px;
+      padding: 14px 20px; transition: transform .2s, box-shadow .2s; text-decoration: none;
+    }
+    button:hover, .button-link:hover { transform: translateY(-3px); }
+    .primary { color: white; background: linear-gradient(135deg, #ff79a6, #e84f87); box-shadow: 0 10px 22px #e84f8738; }
+    .secondary { background: #fff; color: var(--deep); border: 1px solid #ffd0df; }
+    .art {
+      min-height: 390px; display: grid; place-items: center; position: relative;
+    }
+    .flower-card {
+      width: min(100%, 360px); aspect-ratio: 4 / 4.4; border-radius: 48% 48% 28px 28px;
+      background: linear-gradient(160deg, #fff 0%, #ffe2ed 100%);
+      box-shadow: 0 25px 70px #bf477329; border: 8px solid #ffffffb8;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      position: relative; overflow: hidden;
+    }
+    .flower-card:before, .flower-card:after {
+      content: ""; position: absolute; width: 210px; height: 210px; border-radius: 50%;
+      background: #ffc4d8; opacity: .45;
+    }
+    .flower-card:before { top: -95px; left: -75px; }
+    .flower-card:after { bottom: -110px; right: -70px; background: #d8c3ff; }
+    .bouquet { position: relative; z-index: 1; font-size: clamp(5rem, 12vw, 8rem); filter: drop-shadow(0 12px 10px #b83d7020); animation: bob 3s ease-in-out infinite; }
+    @keyframes bob { 50% { transform: translateY(-10px) rotate(2deg); } }
+    .card-note { position: relative; z-index: 1; text-align: center; font-weight: 800; font-size: 1.35rem; color: var(--deep); margin-top: 4px; }
+    .tiny-note { position: relative; z-index: 1; font-size: .9rem; margin-top: 8px; }
+    section { max-width: 1000px; margin: 0 auto; padding: 50px 24px; }
+    .section-title { text-align: center; font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0 0 12px; }
+    .section-sub { text-align: center; color: #92677b; line-height: 1.7; margin: 0 auto 30px; max-width: 650px; }
+    .wish-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .wish {
+      background: #ffffffc9; border: 1px solid #ffe0eb; border-radius: 22px; padding: 24px;
+      box-shadow: 0 12px 32px #b83d700b; transition: transform .2s;
+    }
+    .wish:hover { transform: translateY(-5px); }
+    .wish .emoji { font-size: 2rem; }
+    .wish h3 { margin: 12px 0 8px; color: var(--deep); }
+    .wish p { line-height: 1.7; margin: 0; color: #805268; }
+    .message-box {
+      text-align: center; padding: 34px 24px; border-radius: 28px;
+      background: linear-gradient(135deg, #fff 0%, #ffe5ef 100%);
+      border: 1px solid #ffd0df; box-shadow: 0 18px 45px #b83d7010;
+    }
+    #message { font-size: clamp(1.15rem, 3vw, 1.55rem); line-height: 1.7; min-height: 82px; max-width: 760px; margin: 18px auto 24px; }
+    .signature { color: var(--deep); font-weight: 800; }
+    footer { text-align: center; padding: 30px 20px 42px; color: #9a6a80; font-size: .92rem; }
+    .heart-pop { position: fixed; pointer-events: none; z-index: 10; animation: pop 1.2s ease-out forwards; }
+    @keyframes pop { from { transform: translateY(0) scale(.6); opacity: 1; } to { transform: translateY(-100px) scale(1.5); opacity: 0; } }
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; text-align: center; padding-top: 35px; }
+      .intro { margin: auto; }
+      .buttons { justify-content: center; }
+      .art { min-height: 330px; }
+      .flower-card { width: min(78%, 310px); }
+      .wish-grid { grid-template-columns: 1fr; }
+      nav { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+  <div class="wrap">
+    <nav>
+      <div class="brand">🌷 11A5 gửi yêu thương</div>
+      <div class="nav-tag">20 · 10 · 2026</div>
+    </nav>
+
+    <main>
+      <div class="hero">
+        <div>
+          <div class="eyebrow">💌 Một ngày thật đặc biệt</div>
+          <h1>Chúc mừng<br><span>20 tháng 10</span></h1>
+          <p class="intro">
+            Gửi đến những bông hoa xinh đẹp của <strong>lớp 11A5</strong> —
+            chúc các bạn nữ luôn rạng rỡ, tự tin, học thật tốt và mỗi ngày đều có thật nhiều lý do để mỉm cười!
+          </p>
+          <div class="buttons">
+            <button class="primary" onclick="showWish()">💗 Nhận lời chúc</button>
+            <a class="button-link secondary" href="#loi-chuc">🌸 Đọc lời nhắn</a>
+          </div>
+        </div>
+        <div class="art">
+          <div class="flower-card">
+            <div class="bouquet">💐</div>
+            <div class="card-note">Dành tặng nữ 11A5</div>
+            <div class="tiny-note">Xinh đẹp · Hạnh phúc · Tỏa sáng</div>
+          </div>
+        </div>
+      </div>
+
+      <section id="loi-chuc">
+        <h2 class="section-title">Những điều tốt đẹp gửi đến bạn 🌼</h2>
+        <p class="section-sub">Mong rằng hôm nay và cả những ngày sau nữa, mỗi bạn nữ 11A5 đều cảm nhận được mình thật đặc biệt.</p>
+        <div class="wish-grid">
+          <article class="wish">
+            <div class="emoji">🌷</div>
+            <h3>Luôn xinh tươi</h3>
+            <p>Chúc các bạn luôn tự tin, yêu bản thân và tỏa sáng theo cách riêng của mình.</p>
+          </article>
+          <article class="wish">
+            <div class="emoji">📚</div>
+            <h3>Học tập rực rỡ</h3>
+            <p>Kiểm tra gặp đề quen, bài khó hóa dễ, điểm số thật cao và ước mơ ngày càng gần.</p>
+          </article>
+          <article class="wish">
+            <div class="emoji">💖</div>
+            <h3>Ngập tràn niềm vui</h3>
+            <p>Luôn có bạn bè bên cạnh, gia đình yêu thương và thật nhiều kỷ niệm đẹp của tuổi học trò.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="message-box">
+          <div style="font-size:2.3rem">💌✨💗</div>
+          <h2 class="section-title">Một lời nhắn dành cho các bạn</h2>
+          <p id="message">Chúc toàn thể các bạn nữ lớp 11A5 có một ngày 20/10 thật vui vẻ, nhận được nhiều hoa, quà và những lời yêu thương nhé!</p>
+          <button class="primary" onclick="showWish()">Đổi lời chúc khác 🎀</button>
+          <p class="signature">Thân gửi từ những người bạn lớp 11A5 💕</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Made with 💗 for the girls of 11A5 · Chúc mừng ngày Phụ nữ Việt Nam 20/10
+    </footer>
+  </div>
+
+  <script>
+    const wishes = [
+      "Chúc các cô gái 11A5 luôn xinh đẹp, vui vẻ, học giỏi và lúc nào cũng gặp may mắn! 🌷",
+      "Mong nụ cười luôn nở trên môi các bạn, mọi điều mong muốn đều dần thành hiện thực. 💖",
+      "Chúc các bạn 20/10 nhận thật nhiều hoa, quà, lời khen và cả những bất ngờ đáng yêu! 🎁",
+      "Chúc những bông hoa 11A5 luôn tự tin, mạnh mẽ, dịu dàng khi muốn và cá tính theo cách riêng! 🌸",
+      "Chúc hành trình tuổi học trò của chúng ta có thật nhiều tiếng cười, tình bạn đẹp và kỷ niệm khó quên. ✨",
+      "Không chỉ hôm nay mà cả 364 ngày còn lại, các bạn đều xứng đáng được yêu thương và trân trọng. 💐"
+    ];
+    let lastIndex = -1;
+    function showWish() {
+      let index;
+      do { index = Math.floor(Math.random() * wishes.length); } while (index === lastIndex);
+      lastIndex = index;
+      const message = document.getElementById("message");
+      message.style.opacity = 0;
+      setTimeout(() => {
+        message.textContent = wishes[index];
+        message.style.transition = "opacity .35s";
+        message.style.opacity = 1;
+      }, 160);
+      for (let i = 0; i < 9; i++) setTimeout(createHeart, i * 65);
+    }
+    function createHeart() {
+      const heart = document.createElement("span");
+      heart.className = "heart-pop";
+      heart.textContent = ["💗", "💖", "💕", "🌸", "✨"][Math.floor(Math.random() * 5)];
+      heart.style.left = (15 + Math.random() * 70) + "vw";
+      heart.style.top = (45 + Math.random() * 35) + "vh";
+      heart.style.fontSize = (18 + Math.random() * 18) + "px";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 1300);
+    }
+    const bg = document.getElementById("sparkles");
+    for (let i = 0; i < 22; i++) {
+      const item = document.createElement("span");
+      item.className = "floaty";
+      item.textContent = ["🌸", "💗", "✨", "🌷", "💕"][i % 5];
+      item.style.left = Math.random() * 100 + "%";
+      item.style.animationDuration = (9 + Math.random() * 12) + "s";
+      item.style.animationDelay = (-Math.random() * 18) + "s";
+      item.style.fontSize = (15 + Math.random() * 18) + "px";
+      bg.appendChild(item);
+    }
+  </script>
+</body>
+</html>
